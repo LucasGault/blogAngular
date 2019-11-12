@@ -5,14 +5,12 @@
     <p> {{blogDate | date: 'short' | uppercase}} </p>
     <p>{{blogContenu}}</p>
 
-    <button style="background-color:green ;"
-            class="btn btn-success"
+    <button class="btn btn-success"
             (click)="onLike()">
         Love it !!!
     </button>
 
-    <button style="background-color:red ;"
-            class="btn btn-success"
+    <button class="btn btn-danger"
             (click)="onDislike()">
         Don't love !!!
     </button>
