@@ -1,0 +1,20 @@
+<div [ngClass]="{'list-group-item': true,
+                  'list-group-item-success': blogLike > 0,
+                  'list-group-item-danger': blogLike < 0}">
+    <h4>{{blogTitre}}</h4>
+    <p> {{blogDate | date: 'short' | uppercase}} </p>
+    <p>{{blogContenu}}</p>
+
+    <button style="background-color:green ;"
+            class="btn btn-success"
+            (click)="onLike()">
+        Love it !!!
+    </button>
+
+    <button style="background-color:red ;"
+            class="btn btn-success"
+            (click)="onDislike()">
+        Don't love !!!
+    </button>
+  </div>
+
